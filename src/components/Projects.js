@@ -1,48 +1,52 @@
 import React from 'react';
-import cosmos from "../assets/Images/groupProject.png";
-import passwordGenerator from "../assets/Images/passwordGenerator.png"
-import workdayPlanner from "../assets/Images/workdayPlanner.png"
-import workoutTracker from "../assets/Images/FitnessChart.png"
-import './style.css';
+import nasa from '../assests/images/NASA_logo.png';
+import workday from '../assests/images/workdaySchedule.png';
+import fitness from '../assests/images/FitnessTracker.jpeg';
 
 
 
 
 const Projects = () => {
     return(
-        <div id="projects" class="projects">
-            <h3>Projects</h3>
-            <div class="projectsContainer">
-                <div class="row align-items-start">
-                    <div class="col">
-                        <h4>Into the Cosmos</h4>
-                        <a href="https://chapstick24.github.io/Project-1-/">
-                            <img src={cosmos} class="img-fluid" alt="Into the Cosmos Project"/>
-                        </a>    
-                    </div>
-                    <div class="col">
-                        <h4>Password Generator</h4>
-                        <a href="https://wmalos.github.io/passwordGenerator//">
-                            <img src={passwordGenerator} class="img-fluid" alt="Password Generator"/>
-                        </a>    
+        <section>
+            <h2>Past Projects</h2>
+            <h5>Click on Buttons to View Websites!</h5>
+
+            <div class="row row-col1 row-cols-md-3">
+                <div class="col">
+                    <div class="card">
+                        <img src={nasa} class="img-fluid card-img-top"/>
+                        <div class="card-body">
+                        <h3 class="card-title">NASA Quick Education Project</h3>
+                        <p class="card-text">A website that gives you some quick information about NASA's Image of the Day. Uses one of NASA's API's to gather this information.</p>
+                        <a type="button" class="btn btn-outline-secondary btn-sm" href="https://ucruz2025.github.io/Project-1-/">Into the Cosmos</a>
+                        </div>
                     </div>
                 </div>
-                <div class="row align-items-start">
-                    <div class="col">
-                        <h4>Workday Planner</h4>
-                        <a href="https://wmalos.github.io/workdayPlanner/">
-                            <img src={workdayPlanner} class="img-fluid" alt="Weekday Planner"/>
-                        </a>    
+
+                <div class="col">
+                    <div class="card">
+                        <img src={workday} class="img-fluid card-img-top"/>
+                        <div class="card-body">
+                        <h3 class="card-title">Work Day Schedule Website</h3>
+                        <p class="card-text">Need a simple planner for your work schedule? Here's a website that does just that!</p>
+                        <a type="button" class="btn btn-outline-primary btn-sm" href="https://ucruz2025.github.io/WorkDayScheduleList/">Work Day Schedule</a>
+                        </div>
                     </div>
-                    <div class="col">
-                        <h4>Workout Tracker</h4>
-                        <a href="https://nameless-meadow-19680.herokuapp.com/">
-                            <img src={workoutTracker} class="img-fluid" alt="Fitness Chart"/>
-                        </a>    
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src={fitness} class="img-fluid card-img-top"/>
+                        <div class="card-body">
+                        <h3 class="card-title">Fitness Tracker App</h3>
+                        <p class="card-text">Tracks and displays all recorded workouts. Uses MongoDB and is deployed in Heroku</p>
+                        <a type="button" class="btn btn-outline-success btn-sm" href="https://friendly-eh-56333.herokuapp.com/">Fitness Tracker</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
